@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom'
 
 import UserList from './assets/components/UserList'
 import AddUser from './assets/components/AddUser'
+import CharacterList from './assets/components/Character'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
    <Routes>
     <Route path='/users' element={<UserList/>} />
     <Route path='/add' element={<AddUser/>} />
+    <Route path='/character' element={<CharacterList />} />
    </Routes>
   )
 }
