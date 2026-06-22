@@ -33,6 +33,8 @@ jobs:
       - name: Build and analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: |
-          cd AIS/AIS
-          mvn -B verify -DskipTests org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=DURGAADEVI38_java_fsd_b1
+       run: |
+  cd AIS/AIS
+  mvn -B verify -DskipTests org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
+  -Dsonar.projectKey=DURGAADEVI38_java_fsd_b1 \
+  -Dsonar.organization=durgaadevi38
